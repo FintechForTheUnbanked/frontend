@@ -9,8 +9,10 @@ import Settings from './Settings.vue'
 //Groups
 import CreateGroup from './Groups/Create.vue'
 import ShowGroups from './Groups/Show.vue'
+import CreateGroupGoal from './Groups/Create.Goal.vue'
 
 import VueRouter from 'vue-router'
+
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
 
@@ -19,6 +21,7 @@ const routes = [
   { path: '/settings', component: Settings },
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
+  { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
   { path: '/groups', component: ShowGroups},
 
   { path: '/join', component: Join },
