@@ -2,20 +2,27 @@ import Vue from 'vue'
 import Buefy from 'buefy'
 
 import App from './App.vue'
-import VueRouter from 'vue-router'
 
 import Home from './Home.vue'
 import Settings from './Settings.vue'
+
+//Groups
+import CreateGroup from './Groups/Create.vue'
+import ShowGroups from './Groups/Show.vue'
+
+import VueRouter from 'vue-router'
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
-import GroupList from './views/GroupList.vue'
 
 const routes = [
-  { path: '/home'    , component: Home },
+  { path: '/home'    , component: Home, meta:{tab:"Home"}},
   { path: '/settings', component: Settings },
+
+  { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
+  { path: '/groups', component: ShowGroups},
+
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
-  { path: '/groups', component: GroupList },
 ]
 
 // 3. Create the router instance and pass the `routes` option
