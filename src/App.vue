@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <router-link to="home">Home</router-link>
-    <router-link to="settings">Settings</router-link>
     <router-view></router-view>
-    {{$route.path}}
     <div id="mainNav" class="tabs">
       <ul>
         <li :class="{'is-active': $route.path == '/Home'}">
