@@ -10,14 +10,12 @@ import Settings from './Settings.vue'
 //Groups
 import CreateGroup from './Groups/Create.vue'
 
-import VueRouter from 'vue-router'
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
 
 const routes = [
   { path: '/home'    , component: Home, meta:{tab:"Home"}},
   { path: '/settings', component: Settings },
-  { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
