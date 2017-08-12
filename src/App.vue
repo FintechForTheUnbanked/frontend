@@ -8,7 +8,7 @@
             {{$route.meta.title}}
           </h1>
           <h2 class="subtitle">
-            {{$route.meta.subtitle  }}
+            {{$route.meta.subtitle}} &nbsp;
           </h2>
         </div>
       </div>

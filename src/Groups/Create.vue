@@ -14,7 +14,7 @@
         <textarea class="textarea" placeholder="Textarea"></textarea>
       </div>
     </div>
-    <a class="button" :@click="$route.go()">Pick a goal</a>
+    <router-link class="button" to="create/Goal">Pick a goal</router-link>
   </div>
 </template>
 <script>
