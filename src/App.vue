@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <img src="./assets/logo.png">
+    <h1>{{ msg }}</h1>
+    <h2>Essential Links</h2>
+    <router-link to="home">Home</router-link>
+    <router-link to="settings">Settings</router-link>
     <router-view></router-view>
     <div id="mainNav" class="tabs">
       <ul>
