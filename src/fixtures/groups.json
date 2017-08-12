@@ -1,5 +1,6 @@
 [
   {
+    "id": "city-of-angels",
     "name": "City of Angels",
     "goal": "Costco membership",
     "amount": {
@@ -9,38 +10,32 @@
     "term": 15552000
   },
   {
+    "id": "grumpy-cats",
     "name": "Grumpy Cats",
     "goal": "Gym membership",
     "amount": {
-      "value": 10,
-      "currency": "USD"
+      "value": 15,
+      "currency": "EUR"
     },
     "term": 15552000
   },
   {
+    "id": "dolphins",
     "name": "Dolphins",
     "goal": "Swimming pool membership",
     "amount": {
-      "value": 10,
+      "value": 5,
       "currency": "USD"
     },
     "term": 15552000
   },
   {
+    "id": "travel-pack",
     "name": "Travel Pack",
     "goal": "Car loan",
     "amount": {
-      "value": 10,
-      "currency": "USD"
-    },
-    "term": 15552000
-  },
-  {
-    "name": "City of Angels",
-    "goal": "Costco membership",
-    "amount": {
-      "value": 10,
-      "currency": "USD"
+      "value": 35,
+      "currency": "EUR"
     },
     "term": 15552000
   }

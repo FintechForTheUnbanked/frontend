@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+
     <section class="hero">
       <div class="hero-body">
         <div class="container">
@@ -50,8 +50,15 @@ export default {
 @import "~buefy/src/scss/buefy";
 
 #mainNav{
-  position: absolute;
+  width: 100%;
+  background-color: white;
+  position: fixed;
   bottom: 0;
+
+  & a:hover {
+    color: white;
+    background-color: $primary;
+  }
 }
 
 </style>

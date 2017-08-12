@@ -19,18 +19,20 @@
       </div>
 
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-        <a>#css</a> <a>#responsive</a>
-        <br>
+        <div v-if="group.description">
+          {{ group.description }}
+        </div>
         <small>11:09 PM - 1 Jan 2016</small>
+        <router-link :to="{ name: 'group', params: { groupId: group.id }}">More</router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-
+  props: [
+    "group"
+  ]
 }
 </script>
 <style lang="scss">

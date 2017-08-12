@@ -7,12 +7,12 @@
   </div>
 </template>
 <script>
-import Group from './Group.vue'
+import GroupTile from './GroupTile.vue'
 import Groups from '../fixtures/groups.json'
 
 export default {
   components: {
-    'group-component': Group
+    'group-component': GroupTile
   },
   data() {
     return {
