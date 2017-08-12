@@ -5,7 +5,7 @@ import Settings from './Settings.vue'
 import VueRouter from 'vue-router'
 
 const routes = [
-  { path: '/home', component: Home },
+  { path: '/home'    , component: Home },
   { path: '/settings', component: Settings },
 ]
 
