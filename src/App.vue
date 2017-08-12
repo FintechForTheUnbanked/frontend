@@ -19,6 +19,9 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+	 <ul>
+	 	<li><a class="button is-success">Bulma is active</a></li>
+	 </ul>
   </div>
 </template>
 
@@ -34,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

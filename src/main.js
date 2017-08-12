@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import Buefy from 'buefy'
+
 import App from './App.vue'
 import Home from './Home.vue'
 import Settings from './Settings.vue'
@@ -18,6 +20,8 @@ const router = new VueRouter({
 
 
 Vue.use(VueRouter)
+
+Vue.use(Buefy)
 
 new Vue({
   el: '#app',
