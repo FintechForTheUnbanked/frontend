@@ -1,5 +1,6 @@
 <template>
   <div>
+    <steps-component step="1" steps="2"></steps-component>
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
@@ -38,7 +39,10 @@
 <script>
 import JoinCredentials from '../fixtures/join-credentials.json'
 
+import StepsComponent from '../StepsComponent.vue'
+
 export default {
+  components: { 'steps-component': StepsComponent },
   data: () => JoinCredentials
 }
 </script>

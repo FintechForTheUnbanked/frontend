@@ -9,6 +9,7 @@ import Settings from './Settings.vue'
 import CreateGroup from './Groups/Create.vue'
 import ShowGroups from './Groups/Show.vue'
 import Group from './Groups/ShowGroup.vue'
+<<<<<<< HEAD
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
 
@@ -16,6 +17,17 @@ import Dashboard from './Dashboard.vue'
 import Groupdash from './Groupdash.vue'
 
 import VueRouter from 'vue-router'
+=======
+import Invite from './Groups/Invite.vue'
+
+import VueRouter from 'vue-router'
+
+import Join from './views/Join.vue'
+import FinishJoin from './views/FinishJoin.vue'
+
+import Payout from './Groups/Payout.vue'
+import PayoutReceipt from './Groups/PayoutReceipt.vue'
+>>>>>>> 53a81db64f2a7bd16d4e55920462f60b1854b343
 
 const routes = [
   { path: '/home'    , component: Home, meta:{tab:"Home"}},
@@ -23,19 +35,27 @@ const routes = [
 
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
-  { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
+  { path: '/groups/create/goal', component: CreateGroupGoal, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
   { path: '/groups', component: ShowGroups,
     meta: {
       title: "Find a Group"
     }
   },
   { path: '/group/:groupId', component: Group, name: 'group'},
+  { path: '/group/:groupId/payout', component: Payout, meta: {title: "Group Payout"}},
+  { path: '/group/:groupId/payout/receipt', component: PayoutReceipt, meta: {title: "Group Payout Receipt"}},
+  { path: '/group/:groupId/invite', component: Invite, meta:{title: "Invite Members", tab:"Groups"} },
 
+<<<<<<< HEAD
 
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
   { path: '/groupdash', component: Groupdash },
 
+=======
+  { path: '/join', component: Join, meta: {title: "Join the Unbanked"}},
+  { path: '/finish-join', component: FinishJoin, meta: {title: "Join the Unbanked"}},
+>>>>>>> 53a81db64f2a7bd16d4e55920462f60b1854b343
 ]
 
 // 3. Create the router instance and pass the `routes` option
