@@ -16,6 +16,10 @@
           <p class="title is-4">{{ group.name }}</p>
           <p class="subtitle is-6">{{ group.goal }}</p>
         </div>
+        <div class="media-content media-right">
+          <p class="title is-5">{{ group.amount.value }} {{ group.amount.currency }}</p>
+          <p class="subtitle is-7">A single period lasts {{ group.term }} days.</p>
+        </div>
       </div>
 
       <div class="content">
