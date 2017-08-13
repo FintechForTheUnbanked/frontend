@@ -18,16 +18,15 @@
         </div>
         <div class="media-content media-right">
           <p class="title is-5">{{ group.amount.value }} {{ group.amount.currency }}</p>
-          <p class="subtitle is-7">A single period lasts {{ group.term }} days.</p>
+          <p class="subtitle is-7">Payment interval of {{ group.term }} days.</p>
         </div>
       </div>
 
       <div class="content">
         <div v-if="group.description">
-          {{ group.description.substr(0, 120) }}...
+          {{ group.description.substr(0, 120) }}..
         </div>
-        <small>11:09 PM - 1 Jan 2016</small>
-        <router-link :to="{ name: 'group', params: { groupId: group.id }}">Show me more...</router-link>
+        <small><router-link :to="{ name: 'group', params: { groupId: group.id }}">Show me more</router-link></small>
       </div>
     </div>
   </div>
