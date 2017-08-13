@@ -16,7 +16,9 @@
     </section>
     <div class="container">
       <div class="section">
-        <router-view></router-view>
+        <transition name="slide">
+          <router-view></router-view>
+        </transition>
       </div>
     </div>
     <div id="mainNav" class="tabs">
