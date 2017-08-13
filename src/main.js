@@ -11,6 +11,7 @@ import CreateGroup from './Groups/Create.vue'
 import ShowGroups from './Groups/Show.vue'
 import CreateGroupGoal from './Groups/Create.Goal.vue'
 import Group from './Groups/ShowGroup.vue'
+import Invite from './Groups/Invite.vue'
 
 import VueRouter from 'vue-router'
 
@@ -25,7 +26,7 @@ const routes = [
   { path: '/settings', component: Settings },
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
-  { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
+  { path: '/groups/create/goal', component: CreateGroupGoal, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
   { path: '/groups', component: ShowGroups,
     meta: {
       title: "Find a Group"
@@ -34,6 +35,8 @@ const routes = [
   { path: '/group/:groupId', component: Group, name: 'group'},
   { path: '/group/:groupId/payout', component: Payout, meta: {title: "Group Payout"}},
   { path: '/group/:groupId/payout/receipt', component: PayoutReceipt, meta: {title: "Group Payout Receipt"}},
+  { path: '/group/:groupId/invite', component: Invite, meta:{title: "Invite Members", tab:"Groups"} },
+
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
 ]
