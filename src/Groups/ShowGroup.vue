@@ -47,37 +47,37 @@
     </div>
     </div>
 
-<div class="card">
-<strong>Individual Contribution:</strong> 20€ <br>
-<strong>Term:</strong> 6 months <br>
-<strong>Ends:</strong> June 2017 <br>
-<strong>No. of slots remaining:</strong> 1
+  <div class="card">
+    <strong>Individual Contribution:</strong> 20€ <br>
+    <strong>Term:</strong> 6 months <br>
+    <strong>Ends:</strong> June 2017 <br>
+    <strong>No. of slots remaining:</strong> 1
   </div>
   <br>
-<div class="columns is-mobile is-centered">
+  <div class="columns is-mobile is-centered">
     <div class="column is-half is narrow">
       <p class="control">
-   <a class="button is-primary">
-     Join this group
-   </a>
-  </p>
+        <a class="button is-primary">
+        Join this group
+        </a>
+      </p>
     </div>
-    <div class="container" v-if="!member">
+    <div class="column is-half " v-if="!member">
       <a class="button is-primary" v-on:click="showPayModal" >
         <span class="icon is-small">
           <i class="fa fa-check"></i>
         </span>
         <span>Pay</span>
       </a>
-      <div class="modal" v-bind:class="{ 'is-active': payModal.isActive }">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <payment-tile :group-id="group.id"></payment-tile>
+        <div class="modal" v-bind:class="{ 'is-active': payModal.isActive }">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <payment-tile :group-id="group.id"></payment-tile>
+          </div>
+          <button class="modal-close is-large" aria-label="close" v-on:click="closePayModal"></button>
         </div>
-        <button class="modal-close is-large" aria-label="close" v-on:click="closePayModal"></button>
       </div>
     </div>
-  </div>
 
   </div>
 

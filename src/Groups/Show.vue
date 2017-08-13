@@ -6,7 +6,6 @@
         <i class="fa fa-search"></i>
       </span>
     </div>
-    <router-link class="button is-outlined" to="Groups/create">Create a new Group</router-link>
     <div v-for="group in Groups">
       <group-component :group="group"></group-component>
     </div>

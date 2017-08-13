@@ -24,7 +24,7 @@ import Payout from './Groups/Payout.vue'
 import PayoutReceipt from './Groups/PayoutReceipt.vue'
 
 const routes = [
-  { path: '/home'    , component: Home, meta:{tab:"Home"}},
+  { path: '/home'    , component: Home, meta:{title:"Dashboard", tab:"Home"}},
   { path: '/settings', component: Settings },
 
 

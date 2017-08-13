@@ -34,23 +34,16 @@
       </div>
 
 
-        <div class="columns is-mobile">
-          <div class="column">
-            <p class="control">
-            <a class="button is-primary">
-              Start a group
-            </a>
-          </p>
-          </div>
-          <div class="column">
-            <p class="control">
-              <a class="button is-danger">
-                Join a group
-              </a>
-            </p>
-          </div>
+      <div class="columns is-mobile">
+        <div class="column">
+          <p class="control">
+          <router-link to="/groups/create" class="button is-primary">
+            Start a group
+          </router-link>
+        </p>
         </div>
       </div>
+    </div>
 
 </div>
 
