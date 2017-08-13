@@ -24,7 +24,7 @@ const routes = [
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
   { path: '/groups', component: ShowGroups},
-  { path: '/group/:groupId', component: Group},
+  { path: '/group/:groupId', component: Group, name: 'group'},
 
 
   { path: '/join', component: Join },

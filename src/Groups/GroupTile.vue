@@ -23,7 +23,7 @@
           {{ group.description }}
         </div>
         <small>11:09 PM - 1 Jan 2016</small>
-        <router-link :to="{ name: 'group', params: { groupId: group.id }}"">More</router-link>
+        <router-link :to="{ name: 'group', params: { groupId: group.id }}">Show me more...</router-link>
       </div>
     </div>
   </div>
