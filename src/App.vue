@@ -55,9 +55,15 @@ export default {
   position: fixed;
   bottom: 0;
 
-  & a:hover {
-    color: white;
-    background-color: $primary;
+  border-top: 1px solid $primary;
+
+  & a {
+    color: $primary;
+
+    &:hover {
+      color: white;
+      background-color: $primary;
+    }
   }
 }
 
