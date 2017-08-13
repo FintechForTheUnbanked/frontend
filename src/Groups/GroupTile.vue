@@ -20,7 +20,7 @@
 
       <div class="content">
         <div v-if="group.description">
-          {{ group.description }}
+          {{ group.description.substr(0, 120) }}...
         </div>
         <small>11:09 PM - 1 Jan 2016</small>
         <router-link :to="{ name: 'group', params: { groupId: group.id }}">Show me more...</router-link>

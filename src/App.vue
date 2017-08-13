@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <section class="hero">
+    <section class="hero" v-if="$route.meta.title">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
