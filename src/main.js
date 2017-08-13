@@ -17,6 +17,9 @@ import VueRouter from 'vue-router'
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
 
+import Payout from './Groups/Payout.vue'
+import PayoutReceipt from './Groups/PayoutReceipt.vue'
+
 const routes = [
   { path: '/home'    , component: Home, meta:{tab:"Home"}},
   { path: '/settings', component: Settings },
@@ -29,8 +32,8 @@ const routes = [
     }
   },
   { path: '/group/:groupId', component: Group, name: 'group'},
-
-
+  { path: '/group/:groupId/payout', component: Payout, meta: {title: "Group Payout"}},
+  { path: '/group/:groupId/payout/receipt', component: PayoutReceipt, meta: {title: "Group Payout Receipt"}},
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
 ]
