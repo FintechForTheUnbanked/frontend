@@ -11,7 +11,7 @@
         </li>
       </ul>
     </div>
-    <router-link to="/Groups/city-of-angels" class="button is-primary">Invite them</router-link>
+    <router-link to="/Group/city-of-angels" class="button is-primary">Invite them</router-link>
   </div>
 </template>
 <script>

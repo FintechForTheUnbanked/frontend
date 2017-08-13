@@ -8,11 +8,8 @@ import Settings from './Settings.vue'
 
 import CreateGroup from './Groups/Create.vue'
 import ShowGroups from './Groups/Show.vue'
-<<<<<<< HEAD
 import CreateGroupGoal from './Groups/Create.Goal.vue'
 import CreateGroupInvitation from './Groups/Create.Invitation.vue'
-=======
->>>>>>> 9a81dcf79a0ee2bbf67189d8fb4ae899a01a8ac4
 import Group from './Groups/ShowGroup.vue'
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
@@ -22,8 +19,6 @@ import Groupdash from './Groupdash.vue'
 import Invite from './Groups/Invite.vue'
 
 import VueRouter from 'vue-router'
-
-import CreateGroupGoal from './Groups/Create.Goal.vue'
 
 import Payout from './Groups/Payout.vue'
 import PayoutReceipt from './Groups/PayoutReceipt.vue'
@@ -35,10 +30,7 @@ const routes = [
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/groups/create/goal', component: CreateGroupGoal, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
-<<<<<<< HEAD
   { path: '/groups/create/invitation', component: CreateGroupInvitation, meta:{title: "Start a new Group", subtitle:"Invite friends", tab:"Groups"} },
-=======
->>>>>>> 9a81dcf79a0ee2bbf67189d8fb4ae899a01a8ac4
   { path: '/groups', component: ShowGroups,
     meta: {
       title: "Find a Group"
