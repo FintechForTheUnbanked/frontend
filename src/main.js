@@ -31,8 +31,8 @@ const routes = [
   { path: '/group/:groupId', component: Group, name: 'group'},
 
 
-  { path: '/join', component: Join },
-  { path: '/finish-join', component: FinishJoin },
+  { path: '/join', component: Join, meta: {title: "Join the Unbanked"}},
+  { path: '/finish-join', component: FinishJoin, meta: {title: "Join the Unbanked"}},
 ]
 
 // 3. Create the router instance and pass the `routes` option
