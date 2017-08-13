@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <section class="hero" v-if="$route.meta.title">
       <div class="hero-body">
@@ -35,7 +36,6 @@
 </template>
 
 <script>
-console.dir(this)
 export default {
 
 }
@@ -45,7 +45,7 @@ export default {
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
-#mainNav{
+#mainNav {
   width: 100%;
   background-color: white;
   position: fixed;

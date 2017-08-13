@@ -1,11 +1,7 @@
 <template>
+<div class="">
   <div class="card">
-    <div class="card-image">
-      <figure class="image is-4by3">
-        <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-      </figure>
-    </div>
-    <div class="card-content">
+    <div class="container padded-inbound">
       <div class="media">
         <div class="media-left">
           <figure class="image is-48x48">
@@ -13,12 +9,26 @@
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-4">{{ group.name }}</p>
-          <p class="subtitle is-6">{{ group.goal }}</p>
+          <p class="title is-5">Jane Doe</p>
+          <p class="subtitle is-6">Queen of Queens</p>
         </div>
-        <div class="media-content media-right">
-          <p class="title is-5">{{ group.amount.value }} {{ group.amount.currency }}</p>
-          <p class="subtitle is-7">Payment interval of {{ group.term }} days.</p>
+      </div>
+    </div>
+
+    <div class="card-image">
+      <figure class="image is-4by3">
+        <img :src="`static/${group.image}`" alt="Image">
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <p class="title is-2">{{ group.name }}</p>
+          <p class="subtitle is-3">{{ group.goal }}</p>
+        </div>
+        <div class="column">
+          <p class="title is-3">{{ group.amount.value }} {{ group.amount.currency }}</p>
+          <p class="subtitle is-6">Payment interval of {{ group.term }} days.</p>
         </div>
       </div>
 
@@ -30,6 +40,8 @@
       </div>
     </div>
   </div>
+</div>
+
 </template>
 <script>
 export default {
@@ -39,5 +51,11 @@ export default {
 }
 </script>
 <style lang="scss">
+.card {
+  margin-top: 1em;
+}
 
+.padded-inbound {
+  padding: 1em;
+}
 </style>

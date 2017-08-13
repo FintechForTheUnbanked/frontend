@@ -3,6 +3,7 @@
     "id": "city-of-angels",
     "name": "City of Angels",
     "goal": "Costco membership",
+    "image": "group_1.jpg",
     "amount": {
       "value": 10,
       "currency": "USD"
@@ -14,6 +15,7 @@
     "id": "grumpy-cats",
     "name": "Grumpy Cats",
     "goal": "Gym membership",
+    "image": "group_2.jpg",
     "amount": {
       "value": 15,
       "currency": "EUR"
@@ -25,6 +27,7 @@
     "id": "dolphins",
     "name": "Dolphins",
     "goal": "Swimming pool membership",
+    "image": "group_3.jpg",
     "amount": {
       "value": 5,
       "currency": "USD"
@@ -36,6 +39,7 @@
     "id": "travel-pack",
     "name": "Travel Pack",
     "goal": "Car loan",
+    "image": "group_4.jpg",
     "amount": {
       "value": 35,
       "currency": "EUR"

@@ -1,5 +1,12 @@
 <template>
   <div>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input" type="email" placeholder="Search">
+      <span class="icon is-small is-left">
+        <i class="fa fa-search"></i>
+      </span>
+    </div>
+
     <div v-for="group in Groups">
       <group-component :group="group"></group-component>
     </div>
