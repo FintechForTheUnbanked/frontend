@@ -21,35 +21,36 @@
         <strong>About me:</strong> I love shopping!<br><br>
         <strong>My Groups:</strong>
         <ul>
-          <li><i>Internet Service</i></li>
-          <li><i>Mcfit </i> <span class="tag is-danger"><strong>[DUE]</strong></span> </li>
-          <li><i>Electricity</i></li>
+          <li>Internet Service</li>
+          <li>Mcfit <span class="tag is-danger">DUE</span> </li>
+          <li>Electricity</li>
         </ul>
         <br>
       <strong>Invited Groups:</strong>
       <ul>
-        <li><i>Music</i></li>
-        <li><i>Concert</i></li>
+        <li>Music</li>
+        <li>Concert</li>
       </ul>
       </div>
-    </div>
 
-  <div class="columns is-mobile">
-    <div class="column">
-      <p class="control">
-   <a class="button is-primary">
-     Start a group
-   </a>
- </p>
-    </div>
-    <div class="column">
-      <p class="control">
-        <a class="button is-danger">
-          Join a group
-        </a>
-      </p>
-    </div>
-  </div>
+
+        <div class="columns is-mobile">
+          <div class="column">
+            <p class="control">
+            <a class="button is-primary">
+              Start a group
+            </a>
+          </p>
+          </div>
+          <div class="column">
+            <p class="control">
+              <a class="button is-danger">
+                Join a group
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
 
 </div>
 
