@@ -6,20 +6,21 @@ import App from './App.vue'
 import Home from './Home.vue'
 import Settings from './Settings.vue'
 
-//Groups
 import CreateGroup from './Groups/Create.vue'
 import ShowGroups from './Groups/Show.vue'
-import CreateGroupGoal from './Groups/Create.Goal.vue'
 import Group from './Groups/ShowGroup.vue'
-
-import VueRouter from 'vue-router'
-
 import Join from './views/Join.vue'
 import FinishJoin from './views/FinishJoin.vue'
+
+import Dashboard from './Dashboard.vue'
+import Groupdash from './Groupdash.vue'
+
+import VueRouter from 'vue-router'
 
 const routes = [
   { path: '/home'    , component: Home, meta:{tab:"Home"}},
   { path: '/settings', component: Settings },
+
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
@@ -33,6 +34,8 @@ const routes = [
 
   { path: '/join', component: Join },
   { path: '/finish-join', component: FinishJoin },
+  { path: '/groupdash', component: Groupdash },
+
 ]
 
 // 3. Create the router instance and pass the `routes` option
