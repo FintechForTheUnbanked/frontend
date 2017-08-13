@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
@@ -19,8 +19,48 @@
         </div>
       </div>
     </section>
+    <br>
+<strong>Location:</strong> Berlin Mitte
+
     <div class="container">
-      {{ group.description }}
+    <strong>Description:</strong>  {{ group.description }}
+    </div>
+<br>
+
+
+        <div class="columns is-mobile">
+        <div class="column"><figure class="image is-48x48">
+      <img src="1.jpg">
+    </figure>
+    </div>
+    <div class="column"><figure class="image is-48x48">
+      <img src="2.jpg"></figure>
+    </div>
+        <div class="column"><figure class="image is-48x48">
+      <img src="3.jpg"></figure>
+    </div>
+        <div class="column"><figure class="image is-48x48">
+      <img src="4.jpg"></figure>
+    </div>
+    <div class="column"><figure class="image is-48x48">
+    <img src="5.jpg"></figure>
+    </div>
+    </div>
+
+<div class="card">
+<strong>Individual Contribution:</strong> 20€ <br>
+<strong>Term:</strong> 6 months <br>
+<strong>Ends:</strong> June 2017 <br>
+<strong>No. of slots remaining:</strong> 1
+  </div>
+  <br>
+<div class="columns is-mobile is-centered">
+    <div class="column is-half is narrow">
+      <p class="control">
+   <a class="button is-primary">
+     Join this group
+   </a>
+  </p>
     </div>
     <div class="container" v-if="!member">
       <a class="button is-primary" v-on:click="showPayModal" >
@@ -38,6 +78,9 @@
       </div>
     </div>
   </div>
+
+  </div>
+
 </template>
 <script>
 import Groups from '../fixtures/groups.json'

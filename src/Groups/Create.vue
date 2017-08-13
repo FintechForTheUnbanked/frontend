@@ -14,7 +14,7 @@
         <textarea class="textarea" placeholder="Textarea"></textarea>
       </div>
     </div>
-    <router-link class="button" to="create/Goal">Pick a goal</router-link>
+    <router-link class="button is-primary" to="create/Goal">Pick a goal</router-link>
   </div>
 </template>
 <script>
