@@ -22,15 +22,47 @@
     <div class="container">
       {{ group.description }}
     </div>
+    <div class="container" v-if="!member">
+      <a class="button is-primary" v-on:click="showPayModal" >
+        <span class="icon is-small">
+          <i class="fa fa-check"></i>
+        </span>
+        <span>Pay</span>
+      </a>
+      <div class="modal" v-bind:class="{ 'is-active': payModal.isActive }">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <payment-tile :group-id="group.id"></payment-tile>
+        </div>
+        <button class="modal-close is-large" aria-label="close" v-on:click="closePayModal"></button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import Groups from '../fixtures/groups.json'
 
+import PaymentTile from '../views/PaymentTile.vue'
+
 export default {
+  components: {
+    'payment-tile': PaymentTile
+  },
   data() {
     return {
-      group: Groups.filter(g => g.id === this.$route.params.groupId)[0]
+      group: Groups.filter(g => g.id === this.$route.params.groupId)[0],
+      member: false,
+      payModal: {
+        isActive: false
+      }
+    }
+  },
+  methods: {
+    showPayModal() {
+      this.payModal.isActive = true
+    },
+    closePayModal() {
+      this.payModal.isActive = false
     }
   }
 }
