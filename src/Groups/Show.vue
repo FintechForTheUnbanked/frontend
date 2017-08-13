@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Find a Group</h1>
     <div v-for="group in Groups">
       <group-component :group="group"></group-component>
     </div>

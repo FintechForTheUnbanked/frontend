@@ -7,7 +7,7 @@
           <h1 class="title">
             {{$route.meta.title}}
           </h1>
-          <h2 class="subtitle">
+          <h2 class="subtitle" v-if="$route.meta.subtitle">
             {{$route.meta.subtitle}} &nbsp;
           </h2>
         </div>
@@ -21,7 +21,7 @@
     <div id="mainNav" class="tabs">
       <ul>
         <li :class="{'is-active': $route.meta.tab == 'Home'}">
-          <router-link to="/Home">Overview</router-link>
+          <router-link to="/Home">Home</router-link>
         </li>
         <li :class="{'is-active': $route.meta.tab == 'Groups'}">
           <router-link to="/Groups">Groups</router-link>
@@ -35,13 +35,9 @@
 </template>
 
 <script>
+console.dir(this)
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+
 }
 </script>
 

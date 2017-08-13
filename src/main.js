@@ -23,7 +23,11 @@ const routes = [
 
   { path: '/groups/create', component: CreateGroup, meta:{title: "Start a new Group", tab:"Groups"} },
   { path: '/groups/create/goal', component: CreateGroup, meta:{title: "Start a new Group", subtitle:"Pick a Goal", tab:"Groups"} },
-  { path: '/groups', component: ShowGroups},
+  { path: '/groups', component: ShowGroups,
+    meta: {
+      title: "Find a Group"
+    }
+  },
   { path: '/group/:groupId', component: Group, name: 'group'},
 
 
@@ -38,6 +42,14 @@ const router = new VueRouter({
   routes // short for `routes: routes`
 })
 
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = `Unbanked - ${to.meta.title}`
+  } else {
+    document.title = 'Unbanked'
+  }
+  next()
+})
 
 Vue.use(VueRouter)
 
